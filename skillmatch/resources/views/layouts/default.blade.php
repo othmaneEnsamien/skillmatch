@@ -46,10 +46,9 @@
 
 
     </header>
-    <main>
-        @yield('page-content')
-    </main>
-    <footer>
+
+    {{ $slot }}
+    
     <footer class="footer">
   <div class="container">
     <div class="row">
@@ -91,7 +90,12 @@
         </div>
         </div>
     </footer>
+
+
     @livewireScripts
+    
+
+    @stack('scripts')
 </body>
 
 </html>

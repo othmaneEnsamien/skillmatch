@@ -1,7 +1,4 @@
 
-@extends('layouts.default')
-
-@section('page-content')
 <div class="d-flex flex-column">
 
 <div class="p-2">
@@ -27,4 +24,4 @@ Dans le cadre des projets agiles, SkillMatch permet au scrums masters de mieux i
 </div>
 </div>
 </div>
-@endsection
+
