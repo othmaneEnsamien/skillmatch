@@ -94,10 +94,10 @@
             @else
                 {{-- <li class="menu-item" ><a title="Register or Login" href="{{ route('login') }}">Se connecter</a></li>
     <li class="menu-item" ><a title="Register or Login" href="{{ route('register') }}">S'inscrire</a></li> --}}
-                <li><a href="{{ route('login') }}" class="a-1" role="a"
+                <li><a href="{{ route('login') }} " style="color: white" class="button-1" role="button"
                         style="font-size:14px ;font-family:Roboto Slab">Se
                         connecter</a></li>
-                <li><a href="{{ route('register') }}" class="button-2" role="button"
+                <li><a href="{{ route('register') }}" style="color: white" class="button-2" role="button"
                         style="font-size:14px ;font-family:Roboto Slab">S'inscrire</a></li>
 
                 @endif
