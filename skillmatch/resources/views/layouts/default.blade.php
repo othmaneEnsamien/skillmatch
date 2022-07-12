@@ -47,22 +47,23 @@
                 @if (Route::has('login'))
                     @auth
                         @if (Auth::user()->utype === 'ADM')
-                            <li>
-                                <a href="#">My account
-                                    {{ Auth::user()->name }}<i class="fa fa-angle-down"></i></a>
-
-
-                            <li>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                    style="padding: 12px">
-                                    @csrf
-                            <li>
-                                <a style="color: rgb(63, 63, 63)" href="{{ route('logout') }}"
-                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log
-                                    Out</a>
-                            </li>
-                            </form>
-                            </li>
+                            <li class="dopdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">My account
+                                    {{ Auth::user()->name }}</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{ route('homepage') }}">Dahboard</a></li>
+                                    <li><a href="{{ route('homepage') }}">Gestion Competences</a></li>
+                                    <li><a href="{{ route('homepage') }}">Gestion Projets</a></li>
+                                    <li>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            style="padding: 12px">
+                                            @csrf
+                                    <li>
+                                        <a style="color: rgb(63, 63, 63)" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log
+                                            Out</a>
+                                    </li>
+                                    </form>
                             </li>
 
                 </ul>
@@ -103,7 +104,7 @@
                 @endif
 
                 @endif
-                {{--  --}}
+
 
                 </ul>
                 <label for="nav-toggle" class="icon-burger">
@@ -164,6 +165,15 @@
 
 
         @livewireScripts
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
     </body>
 
     </html>
