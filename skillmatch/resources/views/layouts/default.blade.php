@@ -52,7 +52,7 @@
                                     {{ Auth::user()->name }}</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="{{ route('homepage') }}">Dahboard</a></li>
-                                    <li><a href="{{ route('homepage') }}">Gestion Competences</a></li>
+                                    <li><a href="{{ route('admin.competences') }}">Gestion Competences</a></li>
                                     <li><a href="{{ route('homepage') }}">Gestion Projets</a></li>
                                     <li>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST"
