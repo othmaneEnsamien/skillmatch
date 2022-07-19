@@ -37,7 +37,7 @@
         <nav>
             <input id="nav-toggle" type="checkbox">
             <div class="logo">
-                <img src="../../assets/sofrecom-logo.png" style="width: 15%;">
+                <img src="{{ asset('assets/sofrecom-logo.png') }}" style="width: 15%;">
             </div>
             <ul class="links">
                 <li><a href="{{ route('homepage') }}">Accueil</a></li>
