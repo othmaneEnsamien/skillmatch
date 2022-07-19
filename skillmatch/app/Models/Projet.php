@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Competence extends Model
+class Projet extends Model
 {
     use HasFactory;
 
-    protected $table = 'competences';
-    protected $filable = [
-        'nomcompetence'
+    protected $table = 'projets';
 
+    protected $fillable = [
+        'projet',
+        'niveauprojet'
     ];
 }
